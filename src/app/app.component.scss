@@ -1,0 +1,51 @@
+#map {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+}
+
+.aside {
+    width: 450px;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    overflow: auto;
+
+    .card-holder {
+        background-color: #fafafa;
+        flex: 1 1 auto;
+        overflow-y: auto;
+
+        .card {
+            display: flex;
+            color: #6b6868;
+            cursor: pointer;
+            min-height: 100px;
+            transition: box-shadow .4s ease-in-out;
+            background: #fff;
+            margin: 8px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 1px 1px 1px #e0e0e0;
+
+            .items-container {
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: auto;
+                font-size: 13px;
+                line-height: 23px;
+                padding: 10px 0;
+                margin-left: 15px;
+            }
+
+            img {
+                display: inline-block;
+                max-width: 120px;
+                max-height: 120px;
+                -o-object-fit: contain;
+                object-fit: contain;
+            }
+        }
+    }
+
+}

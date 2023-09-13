@@ -1,0 +1,16 @@
+<div id="map" class="map-container"></div>
+<div class="aside">
+    <div class="card-holder">
+
+        <div class="card" *ngFor="let pin of pins$ | async" (click)="zoomToMarker(pin)">
+            <div class="items-container">
+
+                <div class="title">
+                    {{pin.name}}
+                </div>
+                <div>{{pin.streetAddress}}</div>
+            </div>
+            <img [src]="pin.photo" alt="">
+        </div>
+    </div>
+</div>
